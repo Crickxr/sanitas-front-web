@@ -1,0 +1,10 @@
+{
+    "Title": "Prueba técnica",
+    "Email" : "Email",
+    "Password" : "Contraseña",
+    "Remember" : "Recordar",
+    "Log in" : "Acceder",
+    "Mail error" : "Mail no válido",
+    "Password error" : "Contraseña no válida, mínimo 5 caracteres"
+}
+  
