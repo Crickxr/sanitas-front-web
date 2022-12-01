@@ -68,12 +68,48 @@
             button {
                 border-radius: 25px;
                 border: 2px solid #1c1ca5 !important;
-                padding-left: 3vw;
-                padding-right: 3vw;
+                padding-left: 2vw;
+                padding-right: 2vw;
+                padding-top: 2vh;
+                padding-bottom: 2vh;
                 margin: 4%;
                 // margin-top: 5%;
+                font-size: 1.1vw;
             }
         }
     }
 }
 
+@media (max-width: 960px) {
+
+    .card-content {
+        > h1 {
+            font-size: 4.2vw !important;
+        }
+
+        .remember p {
+            font-size: 3vw !important;
+        }
+
+        button {
+            font-size: 3.3vw !important;
+        }
+    }
+}
+
+@media (min-width: 960px) and (max-width: 1400px) {
+
+    .card-content {
+        > h1 {
+            font-size: 2.8vw !important;
+        }
+    
+        .remember p {
+        font-size: 2vw !important;
+        }
+
+        button {
+            font-size: 2.2vw !important;
+        }
+    }
+}
