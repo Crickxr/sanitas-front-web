@@ -19,7 +19,6 @@
     }
     
     .card {
-        // width: 50%;
         .card-content {
             display: flex;
             flex-direction: column;
@@ -62,6 +61,7 @@
 
                 p {
                     font-size: 1vw;
+                    margin-bottom: 0 !important;
                 }
             }
 
@@ -73,11 +73,18 @@
                 padding-top: 2vh;
                 padding-bottom: 2vh;
                 margin: 4%;
-                // margin-top: 5%;
                 font-size: 1.1vw;
             }
         }
     }
+}
+
+#canvas {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 500px;
+    width: 500px;
 }
 
 @media (max-width: 960px) {

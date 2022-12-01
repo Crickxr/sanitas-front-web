@@ -1,11 +1,11 @@
 <div id="container">
-    <mat-card class="card">
+    <mat-card @fadeSlideInOut class="card" [@shake]="shakeOnError" >
       <mat-card-content class="card-content">
         <img src="../../../assets/logo.jpg">
-        <h1>{{ "Title" | translate }}</h1>
+        <h1 >{{ "Title" | translate }}</h1>
         <form class="form" [formGroup]="formGroup" (ngSubmit)="onClickAcces()">
           <mat-form-field class="field" hideRequiredMarker>
-            <mat-icon matPrefix [ngStyle]="{'color':'#EBEBEB'}">person_outline</mat-icon>
+            <mat-icon matPrefix [ngStyle]="{'color':'#ABABAB'}">person_outline</mat-icon>
             <mat-label>{{ "Email" | translate }}</mat-label>
             <input matInput formControlName="email">
             <mat-error *ngIf="error && !formGroup.controls['email'].valid">
@@ -14,7 +14,7 @@
           </mat-form-field>
         
           <mat-form-field hideRequiredMarker>
-            <mat-icon matPrefix [ngStyle]="{'color':'#EBEBEB'}">lock_outline</mat-icon>
+            <mat-icon matPrefix [ngStyle]="{'color':'#ABABAB'}">lock_outline</mat-icon>
             <mat-label>{{ "Password" | translate }}</mat-label>
             <input matInput formControlName="password" type="password">
             <mat-error *ngIf=" !formGroup.controls['password'].valid">
@@ -31,3 +31,4 @@
       </mat-card-content>
     </mat-card>
 </div>
+<div #canvas></div>
